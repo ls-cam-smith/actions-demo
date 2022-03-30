@@ -12,3 +12,6 @@ jobs:
     with:
       environment: dev
       gcp-project: gcp-blah-blah-dev
+      app-engine-url: 'https://google.com'
+    secrets:
+      SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
