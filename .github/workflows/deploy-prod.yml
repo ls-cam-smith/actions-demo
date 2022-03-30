@@ -2,7 +2,8 @@ name: deploy-prod
 
 on:
   push:
-    - master
+    branches:
+      - master
 
 jobs:  
   deploy:
