@@ -8,6 +8,9 @@ on:
       gcp-project:
         required: true
         type: string
+    secrets:
+      SERVICE_ACCOUNT_KEY:
+        required: false
 
 jobs:
   build:
