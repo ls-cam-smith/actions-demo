@@ -5,10 +5,9 @@ on:
       environment:
         required: true
         type: string
-      
-    secrets:
-      SERVICE_ACCOUNT_KEY:
+      gcp-project:
         required: true
+        type: string
 
 jobs:
   build:
