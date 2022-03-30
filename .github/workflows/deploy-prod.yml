@@ -11,3 +11,5 @@ jobs:
     with:
       environment: prod
       gcp-project: gcp-blah-blah-prod
+    secrets:
+      SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
