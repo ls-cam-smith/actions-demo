@@ -3,7 +3,8 @@ name: deploy-dev
 on:
   workflow_dispatch:
   push:
-    - dev
+    branches:
+      - dev
 
 jobs:  
   deploy:
