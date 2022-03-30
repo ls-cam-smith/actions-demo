@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: echo -e "I am working in [${{ inputs.environment }}]. \nMy gcp project is [${{ inputs.gcp_project }}]. \n My service account key is [${{ secrets.SERVICE_ACCOUNT_KEY }}].
+        run: echo -e "I am working in [${{ inputs.environment }}]. \nMy gcp project is [${{ inputs.gcp_project }}]. \n My service account key is [${{ secrets.SERVICE_ACCOUNT_KEY }}]."
