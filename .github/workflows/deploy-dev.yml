@@ -1,4 +1,4 @@
-name: deploy-master
+name: deploy-dev
 
 on:
   workflow_dispatch:
