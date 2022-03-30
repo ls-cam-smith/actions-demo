@@ -2,13 +2,16 @@ name: deploy-dev
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches-ignore:
+      - dev
   push:
     branches:
       - dev
 
 jobs:  
   deploy:
-    uses: ./.github/workflows/blank.yml
+    uses: ./.github/workflows/deploy.yml
     with:
       environment: dev
       gcp-project: gcp-blah-blah-dev
