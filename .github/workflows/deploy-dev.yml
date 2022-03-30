@@ -1,0 +1,13 @@
+name: deploy-master
+
+on:
+  workflow_dispatch:
+  push:
+    - dev
+
+jobs:  
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      environment: dev
+      gcp-project: gcp-blah-blah-dev
