@@ -1,0 +1,30 @@
+name: act
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      gcp-project:
+        required: true
+        type: string
+      app-engine-url:
+        required: true
+        type: string
+    secrets:
+      SERVICE_ACCOUNT_KEY:
+        required: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: 
+      name: ${{ inputs.environment }}
+      url: ${{ inputs.app-engine-url }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: |
+          echo "I am working in           [${{ inputs.environment }}]."
+          echo "My gcp project is         [${{ inputs.gcp-project }}]."
+          echo "My service account key is [${{ secrets.SERVICE_ACCOUNT_KEY }}]."
