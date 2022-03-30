@@ -8,7 +8,7 @@ on:
 
 jobs:  
   deploy:
-    uses: ./.github/workflows/blank.yml
+    uses: ./.github/workflows/deploy.yml
     with:
       environment: dev
       gcp-project: gcp-blah-blah-dev
