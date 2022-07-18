@@ -11,7 +11,7 @@ on:
 
 jobs:  
   deploy:
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/subfolder/deploy.yml
     with:
       environment: dev
       gcp-project: gcp-blah-blah-dev
