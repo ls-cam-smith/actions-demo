@@ -7,7 +7,7 @@ on:
 
 jobs:  
   deploy:
-    uses: ./.github/workflows/subfolder/deploy.yml
+    uses: ./.github/workflows/deploy.yml
     with:
       environment: prod
       gcp-project: gcp-blah-blah-prod
