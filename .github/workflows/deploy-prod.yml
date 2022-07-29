@@ -1,9 +1,8 @@
 name: deploy-prod
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [released]
 
 jobs:  
   deploy:

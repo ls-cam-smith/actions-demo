@@ -28,3 +28,4 @@ jobs:
           echo "I am working in           [${{ inputs.environment }}]."
           echo "My gcp project is         [${{ inputs.gcp-project }}]."
           echo "My service account key is [${{ secrets.SERVICE_ACCOUNT_KEY }}]."
+          echo "My git ref is $GITHUB_REF"
